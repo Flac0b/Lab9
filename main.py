@@ -7,7 +7,7 @@ def encoder(code):
         else:
             result += str((int(x) - 7))
 
-    return result
+    return int(result)
 
 def decoder(code):
     pass
@@ -31,6 +31,8 @@ if __name__ == "__main__":
             print("Your password has been encoded and stored!")
         elif option == 2:
             print(f"The encoded password is {stored}, and the original password is {decoder(stored)}.")
+        else:
+            break
 
 
 
