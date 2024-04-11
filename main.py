@@ -1,3 +1,5 @@
+# Alfred Brewer's main.py file
+
 def encoder(code):
     result = ""
 
@@ -11,7 +13,7 @@ def encoder(code):
 
 def decoder(code):
     decoded_password = ""
-    for digit in code:
+    for digit in str(code):
         decoded_digit = str((int(digit) - 3) % 10)
         decoded_password += decoded_digit
     return decoded_password
