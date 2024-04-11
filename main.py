@@ -16,14 +16,14 @@ if __name__ == "__main__":
     while True:
 
         print("""
-        Menu
+Menu
 -------------
 1. Encode
 2. Decode
 3. Quit
 """)
 
-        option = input("Please enter an option: ")
+        option = int(input("Please enter an option: "))
         original = ""
 
         if option == 1:
