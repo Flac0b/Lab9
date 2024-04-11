@@ -10,7 +10,11 @@ def encoder(code):
     return int(result)
 
 def decoder(code):
-    pass
+    decoded_password = ""
+    for digit in code:
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_password += decoded_digit
+    return decoded_password
 
 if __name__ == "__main__":
     while True:
